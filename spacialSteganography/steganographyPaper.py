@@ -98,6 +98,11 @@ def image_matrix(image_route):
 
     return I
 
+def pixel (pixel):
+    # Si pixel = 0 (0000000) y pixel = 255 (11111111)
+    # Reemplazo de bit LSB por 0 o 1 no sale del rango 0 a 255
+    return pixel & ~1
+
 def pixelChange(image_route,image_out,matrix):
     #Objeto Image
     image = Image.open(image_route)
@@ -180,7 +185,7 @@ def stgn_in(image_route,image_out,message,T):
     pixelChange(image_route,image_out,I)
     return I
 
-def stgn_out(image_route,T):
+def stgn_out(image_route,image_out,T):
     #Creation of Pixel Matrix
     I = image_matrix(image_route)
     
@@ -188,7 +193,7 @@ def stgn_out(image_route,T):
     x_lim = len(I[0,:])
     if(len(I[0,:])%2 != 0):
         x_lim = x_lim - 1
-
+    print(x_lim)
     y_lim = len(I[:,0])
 
     #Message array
@@ -211,9 +216,12 @@ def stgn_out(image_route,T):
 
                 if(dif >= T):
                     count[0] = a[i]%2
+                    # Reemplazo del valor del ultimo bit del componente por 0
+                    I[y,x][i] = pixel(a[i])
                     message = np.concatenate((message,count))
                     bit = np.roll(bit,1)
                     bit[0] = count[0]
 
                     if(len(message)%8 == 0 and decimalCode(bit[-8:]) == 255):
+                        pixelChange(image_route,image_out,I)
                         return getMessage(message)
