@@ -1,11 +1,9 @@
 # Steganography-Based Image Transmission over UHF Radio Links
 
-![System Architecture](images/system.PNG)
+![System Architecture](images/system.png)
 
 *End-to-end system for image steganography, transmission, and reception using
 New Packet Radio (NPR) modules over UHF links.*
-
----
 
 ## Overview
 
@@ -22,8 +20,6 @@ communication methods, ensuring data confidentiality while evaluating the
 effectiveness of spatial- and frequency-domain hiding algorithms. For the transmission of steganographic images, the system employs New Packet
 Radio (NPR) UHF communication modules, specifically designed to operate in UHF
 frequency bands.
-
----
 
 ## Methods
 
@@ -45,8 +41,6 @@ hiding in images related to agricultural applications.
 - Peak Signal-to-Noise Ratio (PSNR)
 - Structural Similarity Index Measure (SSIM)
 
----
-
 ## Results
 
 Experimental results were obtained using a reference 256×256 Lenna image and
@@ -59,8 +53,6 @@ a frequency-domain steganography-based compression scheme.
 These results demonstrate an effective balance between transmission efficiency,
 image quality, and robustness for secure wireless image communication.
 
----
-
 ## Repository Structure
 
 - `docs/`: reviewed articles and technical references used during development
@@ -68,8 +60,6 @@ image quality, and robustness for secure wireless image communication.
 - `spatialSteganography/`: scripts for spatial-domain steganography
 - `images/`: resulting images from spatial and frequency steganography
 - `npr-main/`: scripts for image transmission and reception using NPR modules
-
----
 
 ## Hardware Setup
 
@@ -81,8 +71,6 @@ The project was developed and validated using the following hardware:
 - Two Raspberry Pi 4 (hosts)
 - Two laptops (hosts)
 
----
-
 ## Requirements
 
 - Python 3.10+
@@ -92,8 +80,6 @@ The project was developed and validated using the following hardware:
 - Matplotlib (latest version)
 - Pillow (latest version)
 - time (standard library)
-
----
 
 ## Author
 
