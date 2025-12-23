@@ -8,7 +8,7 @@ New Packet Radio (NPR) modules over UHF links.*
 ## Overview
 
 This repository contains waveform generation, data acquisition, and signal
-processing algorithms developed at INICTEL-UNI, focused on secure image
+processing algorithms developed during my 2024 internship at INICTEL-UNI whitin the area of Digital Signal Processing, Image Processing and Artificial Intelligence, focused on secure image
 transmission over radiofrequency communication systems. The project presents the design, implementation, and validation of image
 encoding algorithms aimed at the efficient transmission of RGB images through
 wireless radio links. Field experiments included a rigorous evaluation of key
