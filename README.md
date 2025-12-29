@@ -1,25 +1,18 @@
 # Steganography-Based Image Transmission over UHF Radio Links
 
-![System Architecture](images/system.png)
+<p align="center">
+  <img src="images/system.png" width="900">
+</p>
 
-*End-to-end system for image steganography, transmission, and reception using
-New Packet Radio (NPR) modules over UHF links.*
+<p align="center">
+  <em>End-to-end system for image steganography, transmission, and reception using New Packet Radio (NPR) modules over UHF links.</em>
+</p>
 
 ## Overview
 
-This repository contains waveform generation, data acquisition, and signal
-processing algorithms developed during my 2024 internship at INICTEL-UNI whitin the area of Digital Signal Processing, Image Processing and Artificial Intelligence, focused on secure image
-transmission over radiofrequency communication systems. The project presents the design, implementation, and validation of image
-encoding algorithms aimed at the efficient transmission of RGB images through
-wireless radio links. Field experiments included a rigorous evaluation of key
-performance parameters such as transmission quality, robustness, and data
-integrity.
-Additionally, image steganography techniques were developed and implemented to
-hide information within digital images. This work explores secure and discreet
-communication methods, ensuring data confidentiality while evaluating the
-effectiveness of spatial- and frequency-domain hiding algorithms. For the transmission of steganographic images, the system employs New Packet
-Radio (NPR) UHF communication modules, specifically designed to operate in UHF
-frequency bands.
+This repository contains data acquisition and image processing algorithms developed during my 2024 internship at INICTEL-UNI, within the areas of Digital Signal Processing, Image Processing, and Artificial Intelligence, with an emphasis on the secure transmission of images through radiofrequency communication systems.
+The project addresses the design, implementation, and evaluation of image steganography techniques aimed at hiding information within digital images, analyzing the effectiveness of hiding algorithms in both the spatial and frequency domains.
+For the transmission of steganographic images, the system employs New Packet Radio (NPR) UHF communication modules, specifically designed to operate in UHF frequency bands.
 
 ## Methods
 
@@ -74,12 +67,11 @@ The project was developed and validated using the following hardware:
 ## Requirements
 
 - Python 3.10+
-- socket (latest version)
-- pickle (latest version)
-- NumPy (latest version)
-- Matplotlib (latest version)
-- Pillow (latest version)
-- time (standard library)
+- Pillow
+- socket
+- pickle
+- NumPy
+- Matplotlib
 
 ## Author
 
