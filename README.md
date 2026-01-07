@@ -10,7 +10,7 @@
 
 ## Overview
 
-This repository contains data acquisition and image processing algorithms developed during my 2024 internship at INICTEL-UNI, within the areas of Digital Signal Processing, Image Processing, and Artificial Intelligence, with an emphasis on the secure transmission of images through radiofrequency communication systems.
+This repository contains data acquisition and image processing algorithms developed during my 2024 internship at INICTEL-UNI, within the areas of Digital Signal Processing, Image Processing, and Artificial Intelligence, with an emphasis on the secure transmission of images through radiofrequency communication systems.<br>
 The project addresses the design, implementation, and evaluation of image steganography techniques aimed at hiding information within digital images, analyzing the effectiveness of hiding algorithms in both the spatial and frequency domains.
 For the transmission of steganographic images, the system employs New Packet Radio (NPR) UHF communication modules, specifically designed to operate in UHF frequency bands.
 
